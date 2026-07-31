@@ -14,4 +14,21 @@
   const sum: number = x + y;
   const result: string = `The sum of ${x} and ${y} is ${sum}`;
   console.log(result);
-};
+}
+
+function calculateTax(amount: number, shouldApplyTax: boolean): number {
+  const taxRate: number = 0.06;
+  if (shouldApplyTax) {
+    return amount * taxRate;
+  }
+
+  return amount;
+}
+
+console.log(calculateTax(3, true));
+
+function greet(name: string): string {
+  return `Hello, ${name}!`;
+}
+
+console.log(greet("world"));
